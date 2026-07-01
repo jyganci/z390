@@ -10,13 +10,13 @@
         <meta name="author" content="z390 Development team">
       
       
-        <link rel="canonical" href="https://z390development.github.io/z390/user_guide/zCOBOL/string_implementation/">
+        <link rel="canonical" href="https://z390development.github.io/z390/design/zCOBOL/sort_implementation/">
       
       
-        <link rel="prev" href="../sort_implementation/">
+        <link rel="prev" href="../replace_implementation/">
       
       
-        <link rel="next" href="../zCOBOL_NIST_COBOL_1985_Test_Results/">
+        <link rel="next" href="../string_implementation/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>zCOBOL STRING Statement Implementation - z390</title>
+        <title>zCOBOL SORT - z390</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#zcobol-string-statement-implementation" class="md-skip">
+        <a href="#zcobol-sort" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              zCOBOL STRING Statement Implementation
+              zCOBOL SORT
             
           </span>
         </div>
@@ -237,8 +237,6 @@
   
   
   
-    
-  
   
     
     
@@ -246,13 +244,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../z390/commands/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../user_guide/z390/commands/" class="md-tabs__link">
           
   
   
@@ -303,6 +299,40 @@
 
         </a>
       </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../replace_implementation/" class="md-tabs__link">
+          
+  
+  
+  Design documents
+
+        </a>
+      </li>
+    
+  
+
     
   
 
@@ -560,31 +590,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -602,7 +627,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -626,20 +651,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
             
   
   
@@ -675,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../z390/commands/" class="md-nav__link">
+      <a href="../../../user_guide/z390/commands/" class="md-nav__link">
         
   
   
@@ -703,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../z390/structured_macro/" class="md-nav__link">
+      <a href="../../../user_guide/z390/structured_macro/" class="md-nav__link">
         
   
   
@@ -731,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../z390/z390_filetypes/" class="md-nav__link">
+      <a href="../../../user_guide/z390/z390_filetypes/" class="md-nav__link">
         
   
   
@@ -759,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../z390/z390_options/" class="md-nav__link">
+      <a href="../../../user_guide/z390/z390_options/" class="md-nav__link">
         
   
   
@@ -792,31 +814,26 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -834,7 +851,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -852,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/" class="md-nav__link">
+      <a href="../../../user_guide/zCOBOL/commands/" class="md-nav__link">
         
   
   
@@ -880,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zCOBOL_User_Guide/" class="md-nav__link">
+      <a href="../../../user_guide/zCOBOL/zCOBOL_User_Guide/" class="md-nav__link">
         
   
   
@@ -908,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zCOBOL_System_Programmer_Guide/" class="md-nav__link">
+      <a href="../../../user_guide/zCOBOL/zCOBOL_System_Programmer_Guide/" class="md-nav__link">
         
   
   
@@ -936,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zCOBOL_filetypes/" class="md-nav__link">
+      <a href="../../../user_guide/zCOBOL/zCOBOL_filetypes/" class="md-nav__link">
         
   
   
@@ -964,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zCOBOL_options/" class="md-nav__link">
+      <a href="../../../user_guide/zCOBOL/zCOBOL_options/" class="md-nav__link">
         
   
   
@@ -992,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zCOBOL_NIST_COBOL_1985_Test_Results/" class="md-nav__link">
+      <a href="../../../user_guide/zCOBOL/zCOBOL_NIST_COBOL_1985_Test_Results/" class="md-nav__link">
         
   
   
@@ -1000,62 +1017,6 @@
     
   
     zCOBOL NIST COBOL 1985 Test Results
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sort_implementation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    zCOBOL SORT
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../replace_implementation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    zCOBOL REPLACE Statement Implementation
   
 
     
@@ -1090,20 +1051,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   
@@ -1139,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zCICS/" class="md-nav__link">
+      <a href="../../../user_guide/zCICS/" class="md-nav__link">
         
   
   
@@ -1167,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zCICS/zcics_app_prog_guide/" class="md-nav__link">
+      <a href="../../../user_guide/zCICS/zcics_app_prog_guide/" class="md-nav__link">
         
   
   
@@ -1195,7 +1153,63 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zCICS/zcics_history/" class="md-nav__link">
+      <a href="../../../user_guide/zCICS/zcics_basic_mapping_support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCICS Basic Mapping Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_guide/zCICS/zcics_diagnosis_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCICS Diagnosis Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_guide/zCICS/zcics_history/" class="md-nav__link">
         
   
   
@@ -1223,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zCICS/zcics_intro/" class="md-nav__link">
+      <a href="../../../user_guide/zCICS/zcics_intro/" class="md-nav__link">
         
   
   
@@ -1231,6 +1245,90 @@
     
   
     zCics - introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_guide/zCICS/zcics_supplied_transactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCICS Supplied Transactions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_guide/zCICS/zcics_sys_prog_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCICS System Programmer's Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_guide/zCICS/zcics_vsam_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCICS VSAM Guide
   
 
     
@@ -1265,20 +1363,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
@@ -1314,14 +1409,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zVSAM/zVSAM_V2_Design/" class="md-nav__link">
+      <a href="../../../user_guide/zVSAM/zVSAM_V1_User_Guide/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    zVSAM V2 Design and Logic manual
+    zVSAM v1 User Guide
   
 
     
@@ -1342,7 +1437,63 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zVSAM/zVSAM_V2_Design_File_Structure/" class="md-nav__link">
+      <a href="../../../user_guide/zVSAM/zVSAM_V1_Catalog_User_Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zVSAM v1 Catalog User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_guide/zVSAM/zVSAM_V1_zRepro_User_Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zVSAM v1 zRepro User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_guide/zVSAM/zVSAM_V2_Design_File_Structure/" class="md-nav__link">
         
   
   
@@ -1370,14 +1521,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zVSAM/zVSAM_V2_Design_Interfaces/" class="md-nav__link">
+      <a href="../../../user_guide/zVSAM/zVSAM_V2_Design_Interfaces/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    zVSAM V2 - API for Assembler and zCobol programs
+    zVSAM V2 Design Interfaces
   
 
     
@@ -1398,7 +1549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zVSAM/zVSAM_V2_Design_RPL_Processes/" class="md-nav__link">
+      <a href="../../../user_guide/zVSAM/zVSAM_V2_Design_RPL_Processes/" class="md-nav__link">
         
   
   
@@ -1426,7 +1577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zVSAM/zVSAM_V2_Design_ACB_Processes/" class="md-nav__link">
+      <a href="../../../user_guide/zVSAM/zVSAM_V2_Design_ACB_Processes/" class="md-nav__link">
         
   
   
@@ -1454,14 +1605,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zVSAM/zVSAM_V2_Design_Addenda/" class="md-nav__link">
+      <a href="../../../user_guide/zVSAM/zVSAM_V2_Design_Addenda/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    zVSAM V2 - Addenda
+    zVSAM V2 Design Addenda
   
 
     
@@ -2028,6 +2179,490 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design documents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design documents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCOBOL
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    zCOBOL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../replace_implementation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCOBOL REPLACE Statement Implementation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCOBOL SORT
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCOBOL SORT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-type-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Type Mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Encoding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../string_implementation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zCOBOL STRING Statement Implementation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zVSAM
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    zVSAM
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zVSAM/zVSAM_V2_Design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zVSAM V2 Design and Logic manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zVSAM/zVSAM_V2_Design_Interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zVSAM V2 - API for Assembler and zCobol programs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zVSAM/zVSAM_V2_Design_Addenda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zVSAM V2 - Addenda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2055,10 +2690,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Abstract
+        How It Works
       
     </span>
   </a>
@@ -2066,10 +2701,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#normative-reference" class="md-nav__link">
+  <a href="#files" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Normative Reference
+        Files
       
     </span>
   </a>
@@ -2077,177 +2712,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-was-implemented" class="md-nav__link">
+  <a href="#key-type-mapping" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What Was Implemented
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What Was Implemented">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-string-with-delimited-by-size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Basic STRING with DELIMITED BY SIZE
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#files-createdmodified" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Files Created/Modified
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Technical Details
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Technical Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementation-approach" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Implementation Approach
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-passing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parameter Passing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#return-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Return Values
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-remains-to-be-implemented" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Remains to be Implemented
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What Remains to be Implemented">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#string-statement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        STRING Statement
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unstring-statement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        UNSTRING Statement
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Testing
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Testing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#test-program-teststr1cbl" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Test Program: TESTSTR1.CBL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#running-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Running Tests
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        References
+        Key Type Mapping
       
     </span>
   </a>
@@ -2255,10 +2723,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#changelog" class="md-nav__link">
+  <a href="#file-encoding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Changelog
+        File Encoding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
       
     </span>
   </a>
@@ -2285,357 +2786,144 @@
   
 
 
-<h1 id="zcobol-string-statement-implementation">zCOBOL STRING Statement Implementation</h1>
-<p><strong>Author:</strong> Zane Hambly<br />
-<strong>Date:</strong> December 2025<br />
-<strong>Standard:</strong> FIPS PUB 21-2 (ANSI X3.23-1985, ISO 1989-1985)</p>
-<hr />
-<h2 id="abstract">Abstract</h2>
-<p>This document describes the implementation of the COBOL STRING statement in z390 
-zCOBOL, closing a 17-year TODO item (stub created 11/17/2008). The implementation
-provides basic STRING functionality with <code>DELIMITED BY SIZE</code>, following the Federal 
-Information Processing Standards Publication 21-2.</p>
-<hr />
-<h2 id="normative-reference">Normative Reference</h2>
-<p>This implementation conforms to:</p>
-<blockquote>
-<p><strong>FIPS PUB 21-2</strong>, <em>COBOL</em>, Federal Information Processing Standards Publication,
-U.S. Department of Commerce, National Institute of Standards and Technology, 1985.
-Incorporates ANSI X3.23-1985 and ISO 1989-1985.</p>
-</blockquote>
-<p>The following sections of FIPS PUB 21-2 were consulted:</p>
-<table>
-<thead>
-<tr>
-<th>Section</th>
-<th>Title</th>
-<th>Page Reference</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VI-6.25</td>
-<td>The STRING Statement</td>
-<td><strong>VI-131</strong> to VI-133</td>
-</tr>
-<tr>
-<td>VI-6.25.1</td>
-<td>Function</td>
-<td>VI-131</td>
-</tr>
-<tr>
-<td>VI-6.25.2</td>
-<td>General Format</td>
-<td>VI-131</td>
-</tr>
-<tr>
-<td>VI-6.25.3</td>
-<td>Syntax Rules</td>
-<td>VI-131</td>
-</tr>
-<tr>
-<td>VI-6.25.4</td>
-<td>General Rules</td>
-<td>VI-132</td>
-</tr>
-</tbody>
-</table>
-<p>The standard document was obtained from NIST archives and verified against the
-official specification text.</p>
-<hr />
-<h2 id="what-was-implemented">What Was Implemented</h2>
-<h3 id="basic-string-with-delimited-by-size">Basic STRING with DELIMITED BY SIZE</h3>
-<div class="highlight"><pre><span></span><code><span class="c">STRING</span><span class="w"> </span><span class="nv">source-field</span><span class="w"> </span><span class="kp">DELIMITED</span><span class="w"> </span><span class="kp">BY</span><span class="w"> </span><span class="kp">SIZE</span>
-<span class="kp">      </span><span class="w"> </span><span class="kp">INTO</span><span class="w"> </span><span class="nv">target-field</span><span class="p">.</span>
+<h1 id="zcobol-sort">zCOBOL SORT</h1>
+<p>zCOBOL provides support for the COBOL SORT statement
+and generates HLASM targeting the existing z390 ZSORT infrastructure
+(SVC X'A1').</p>
+<p>Both USING/GIVING and INPUT/OUTPUT PROCEDURE forms are supported.
+Multi-key sorts with mixed ASCENDING/DESCENDING work. </p>
+<p>MERGE is not currently supported.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>The SORT macro parses the statement at assembly time, looks up the SD
+(Sort Description) entry to find record layout and key positions, then
+calls <code>GEN_SORT.MAC</code> to emit the actual HLASM. The generated code
+delegates to ZSORT, which does the heavy lifting via SVC X'A1'.</p>
+<p>For INPUT/OUTPUT PROCEDURE, the macro generates PERFORM-style branch
+logic around the user's procedure sections. RELEASE writes records into
+the sort, RETURN reads them back out.</p>
+<div class="highlight"><pre><span></span><code>COBOL source --&gt; SORT.MAC (parse) --&gt; ZC_SD_FIND (lookup) --&gt; GEN_SORT (emit) --&gt; ZSORT (SVC)
 </code></pre></div>
-<p>This copies the entire contents of the source field into the target field, starting at position 1 (or the current pointer position if WITH POINTER is used).</p>
-<h3 id="files-createdmodified">Files Created/Modified</h3>
+<h2 id="files">Files</h2>
 <table>
 <thead>
 <tr>
 <th>File</th>
-<th>Type</th>
-<th>Description</th>
+<th>What It Does</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>zcobol/lib/STRING.MLC</code></td>
-<td>New</td>
-<td>Runtime library routine</td>
+<td><code>zcobol/mac/SORT.MAC</code></td>
+<td>Parses SORT statement — replaces the 2008 stub</td>
 </tr>
 <tr>
-<td><code>zcobol/mac/STRING.MAC</code></td>
-<td>Modified</td>
-<td>COBOL statement parser</td>
+<td><code>zcobol/mac/GEN_SORT.MAC</code></td>
+<td>Generates HLASM code targeting ZSORT</td>
 </tr>
 <tr>
-<td><code>zcobol/mac/GEN_STRING.MAC</code></td>
-<td>New</td>
-<td>Code generator (simplified)</td>
+<td><code>zcobol/mac/ZCSD.MAC</code></td>
+<td>Parses SD entries, stores sort file metadata</td>
 </tr>
 <tr>
-<td><code>zcobol/lib/ZC390CVT.CPY</code></td>
-<td>Modified</td>
-<td>Added ZCVT_STRING entry</td>
+<td><code>zcobol/mac/ZC_SD_FIND.MAC</code></td>
+<td>Looks up sort files by name</td>
 </tr>
 <tr>
-<td><code>zcobol/cpy/ZC390CVT.CPY</code></td>
-<td>Modified</td>
-<td>Added ZCVT_STRING entry</td>
+<td><code>zcobol/cpy/ZC_SD.CPY</code></td>
+<td>Global variables for sort file tracking</td>
 </tr>
 <tr>
-<td><code>bat/BLDCBLLIB.BAT</code></td>
-<td>Modified</td>
-<td>Include STRING in library build</td>
+<td><code>zcobol/mac/RELEASE.MAC</code></td>
+<td>Implements RELEASE for INPUT PROCEDURE</td>
 </tr>
 <tr>
-<td><code>zcobol/test/TESTSTR1.CBL</code></td>
-<td>New</td>
-<td>Test program</td>
+<td><code>zcobol/mac/RETURN.MAC</code></td>
+<td>Extended to support SORT RETURN</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="technical-details">Technical Details</h2>
-<h3 id="implementation-approach">Implementation Approach</h3>
-<p>The STRING statement is implemented using inline code generation rather than a separate GEN_STRING macro call, due to HLASM macro line continuation issues discovered during development.</p>
-<p>The runtime (<code>STRING.MLC</code>) uses <strong>MVCL</strong> for the copy operation rather than EX/MVC, as the EX instruction exhibited unexpected behaviour in z390's emulation during testing.</p>
-<h3 id="parameter-passing">Parameter Passing</h3>
-<p>Parameters are passed via <code>ZCVT_WORKAREA</code>:</p>
+<p><code>ZC_WS.CPY</code> was intentionally left alone. Touching shared copybooks to add
+sort variables felt like defusing a bomb with a hammer.</p>
+<h2 id="key-type-mapping">Key Type Mapping</h2>
+<p>COBOL PIC types map to ZSORT key types:</p>
 <table>
 <thead>
 <tr>
-<th>Offset</th>
-<th>Content</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>A(source)</td>
-<td>Address of source field</td>
-</tr>
-<tr>
-<td>4</td>
-<td>L'source</td>
-<td>Length of source field</td>
-</tr>
-<tr>
-<td>8</td>
-<td>A(delimiter)</td>
-<td>Address of delimiter (0 if SIZE)</td>
-</tr>
-<tr>
-<td>12</td>
-<td>L'delimiter</td>
-<td>Length of delimiter (0 if SIZE)</td>
-</tr>
-<tr>
-<td>16</td>
-<td>A(target)</td>
-<td>Address of target field</td>
-</tr>
-<tr>
-<td>20</td>
-<td>L'target</td>
-<td>Length of target field</td>
-</tr>
-<tr>
-<td>24</td>
-<td>A(pointer)</td>
-<td>Address of pointer field (0 if none)</td>
-</tr>
-<tr>
-<td>28</td>
-<td>flags</td>
-<td>Reserved</td>
-</tr>
-</tbody>
-</table>
-<h3 id="return-values">Return Values</h3>
-<ul>
-<li>R0 = New pointer position (1-based)</li>
-<li>R1 = Overflow flag (0 = no overflow, 1 = overflow)</li>
-</ul>
-<hr />
-<h2 id="what-remains-to-be-implemented">What Remains to be Implemented</h2>
-<h3 id="string-statement">STRING Statement</h3>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Priority</th>
-<th>Complexity</th>
+<th>COBOL PIC</th>
+<th>ZSORT</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Multiple source fields</td>
-<td>Medium</td>
-<td>Medium</td>
-<td>Loop through sources</td>
+<td>X, A</td>
+<td>CH</td>
+<td>EBCDIC character</td>
 </tr>
 <tr>
-<td>DELIMITED BY literal</td>
-<td>Medium</td>
-<td>Easy</td>
-<td>e.g., <code>DELIMITED BY SPACE</code></td>
+<td>9 (DISPLAY)</td>
+<td>ZD</td>
+<td>Zoned decimal</td>
 </tr>
 <tr>
-<td>DELIMITED BY identifier</td>
-<td>Low</td>
-<td>Easy</td>
-<td>Use field value as delimiter</td>
+<td>9 COMP-3</td>
+<td>PD</td>
+<td>Packed decimal</td>
 </tr>
 <tr>
-<td>WITH POINTER clause</td>
-<td>Medium</td>
-<td>Easy</td>
-<td>Placeholder exists</td>
-</tr>
-<tr>
-<td>ON OVERFLOW clause</td>
-<td>Medium</td>
-<td>Medium</td>
-<td>Conditional branching</td>
-</tr>
-<tr>
-<td>NOT ON OVERFLOW clause</td>
-<td>Low</td>
-<td>Medium</td>
-<td>Conditional branching</td>
-</tr>
-<tr>
-<td>END-STRING scope</td>
-<td>Low</td>
-<td>Easy</td>
-<td>Already handled by parser</td>
+<td>9 COMP (H/F/G)</td>
+<td>FI</td>
+<td>Signed binary</td>
 </tr>
 </tbody>
 </table>
-<h3 id="unstring-statement">UNSTRING Statement</h3>
-<p>The UNSTRING statement is significantly more complex than STRING:</p>
-<div class="highlight"><pre><span></span><code><span class="c">UNSTRI</span><span class="nv">NG</span><span class="w"> </span><span class="nv">source-field</span>
-<span class="c">    DE</span><span class="nv">LIMITED</span><span class="w"> </span><span class="kp">BY </span><span class="err">[</span><span class="kp">ALL</span><span class="err">]</span><span class="w"> </span><span class="nv">delimiter-1</span><span class="w"> </span><span class="err">[</span><span class="ow">OR </span><span class="err">[</span><span class="kp">ALL</span><span class="err">]</span><span class="w"> </span><span class="nv">delimiter-2</span><span class="err">]</span><span class="p">...</span>
-<span class="c">    IN</span><span class="nv">TO</span><span class="w"> </span><span class="nv">dest-1</span><span class="w"> </span><span class="err">[</span><span class="kp">DELIMITER</span><span class="w"> </span><span class="kp">IN</span><span class="w"> </span><span class="nv">delim-1</span><span class="err">]</span><span class="w"> </span><span class="err">[</span><span class="kp">COUNT</span><span class="w"> </span><span class="kp">IN</span><span class="w"> </span><span class="nv">count-1</span><span class="err">]</span>
-<span class="c">      </span><span class="w">   </span><span class="nv">dest-2</span><span class="w"> </span><span class="err">[</span><span class="kp">DELIMITER</span><span class="w"> </span><span class="kp">IN</span><span class="w"> </span><span class="nv">delim-2</span><span class="err">]</span><span class="w"> </span><span class="err">[</span><span class="kp">COUNT</span><span class="w"> </span><span class="kp">IN</span><span class="w"> </span><span class="nv">count-2</span><span class="err">]</span><span class="p">...</span>
-<span class="c">    [W</span><span class="nv">ITH</span><span class="w"> </span><span class="kp">POINTER</span><span class="w"> </span><span class="nv">pointer-field</span><span class="err">]</span>
-<span class="c">    [T</span><span class="nv">ALLYING</span><span class="w"> </span><span class="kp">IN</span><span class="w"> </span><span class="nv">tally-field</span><span class="err">]</span>
-<span class="c">    [O</span><span class="nv">N</span><span class="w"> </span><span class="kp">OVERFLOW</span><span class="w"> </span><span class="err">statement]</span>
-<span class="c">    [N</span><span class="nv">OT</span><span class="w"> </span><span class="kp">ON</span><span class="w"> </span><span class="kp">OVERFLOW</span><span class="w"> </span><span class="err">statement]</span>
-<span class="c">    [E</span><span class="nv">ND-UNSTRING</span><span class="err">]</span>
-</code></pre></div>
+<h2 id="file-encoding">File Encoding</h2>
+<p>SORT expects EBCDIC internally. For LINE SEQUENTIAL files, z390 handles
+ASCII-EBCDIC translation automatically. For fixed-record files, you need
+EBCDIC input or your output will be sorted with great confidence and zero
+correctness.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Not yet implemented (flagged via MNOTE 4 at assembly time):</p>
+<ul>
+<li><code>WITH DUPLICATES IN ORDER</code></li>
+<li><code>COLLATING SEQUENCE IS</code></li>
+<li>Multiple USING/GIVING files</li>
+<li>MERGE statement</li>
+</ul>
+<h2 id="tests">Tests</h2>
 <table>
 <thead>
 <tr>
-<th>Feature</th>
-<th>Complexity</th>
-<th>Reason</th>
+<th>Test</th>
+<th>Covers</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Basic UNSTRING</td>
-<td>High</td>
-<td>Requires delimiter scanning algorithm</td>
+<td><code>zcobol/tests/SORTASC.CBL</code></td>
+<td>LINE SEQUENTIAL, ascending, USING/GIVING</td>
 </tr>
 <tr>
-<td>Multiple delimiters</td>
-<td>High</td>
-<td>OR logic with multiple patterns</td>
+<td><code>zcobol/tests/SORTDEF.CBL</code></td>
+<td>Default file organisation (no explicit ORGANIZATION)</td>
 </tr>
 <tr>
-<td>ALL keyword</td>
-<td>Medium</td>
-<td>Treat consecutive delimiters as one</td>
-</tr>
-<tr>
-<td>DELIMITER IN</td>
-<td>Medium</td>
-<td>Store matched delimiter</td>
-</tr>
-<tr>
-<td>COUNT IN</td>
-<td>Medium</td>
-<td>Store character count</td>
-</tr>
-<tr>
-<td>TALLYING IN</td>
-<td>Medium</td>
-<td>Count fields filled</td>
-</tr>
-<tr>
-<td>Multiple outputs</td>
-<td>High</td>
-<td>Variable number of target fields</td>
+<td><code>zcobol/tests/SORTMULT.CBL</code></td>
+<td>Multiple SORTs in one programme (ASC then DESC)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Estimated effort:</strong> 8+ hours for full implementation</p>
-<hr />
-<h2 id="testing">Testing</h2>
-<h3 id="test-program-teststr1cbl">Test Program: TESTSTR1.CBL</h3>
-<div class="highlight"><pre><span></span><code><span class="c">STRING</span><span class="w"> </span><span class="nv">WS-FIRST-NAME</span><span class="w"> </span><span class="kp">DELIMITED</span><span class="w"> </span><span class="kp">BY</span><span class="w"> </span><span class="kp">SIZE</span>
-<span class="kp">      </span><span class="w"> </span><span class="kp">INTO</span><span class="w"> </span><span class="nv">WS-RESULT</span><span class="p">.</span>
+<p>All tests use DD name environment variables for file assignment,
+consistent with JCL conventions. Output is compared against <code>.TF2</code>
+reference files:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">INFILE</span><span class="o">=</span>zcobol/tests/SORTASC.TF1
+<span class="nb">export</span><span class="w"> </span><span class="nv">OUTFILE</span><span class="o">=</span>zcobol/tests/SORTASC.OUT
+bash/cblclg<span class="w"> </span>zcobol/tests/SORTASC
+diff<span class="w"> </span>zcobol/tests/SORTASC.OUT<span class="w"> </span>zcobol/tests/SORTASC.TF2
 </code></pre></div>
-<p><strong>Expected output:</strong>
-<div class="highlight"><pre><span></span><code>TESTSTR1 - COBOL STRING TEST STARTED
-RESULT: [ JOHN                      ]
-TEST 1: PASS - STRING COPIED CORRECTLY
-TESTSTR1 - STRING TEST COMPLETED
-TESTSTR1 - TEST ENDED OK
-</code></pre></div></p>
-<h3 id="running-tests">Running Tests</h3>
-<div class="highlight"><pre><span></span><code>bat\CBLCLG.BAT zcobol\test\TESTSTR1
-</code></pre></div>
-<hr />
-<hr />
-<h2 id="references">References</h2>
-<ol>
-<li><strong>FIPS PUB 21-2</strong> (1985). <em>COBOL</em>. Federal Information Processing Standards 
-   Publication. U.S. Department of Commerce, National Institute of Standards 
-   and Technology. Incorporates ANSI X3.23-1985 and ISO 1989-1985.</li>
-<li>
-<p>Section VI-6.25: The STRING Statement (pp. VI-131 to VI-133)</p>
-</li>
-<li>
-<p><strong>ANSI X3.23-1985</strong> (1985). <em>American National Standard for Information Systems - 
-   Programming Language - COBOL</em>. American National Standards Institute.</p>
-</li>
-<li>
-<p><strong>ISO 1989:1985</strong> (1985). <em>Programming languages - COBOL</em>. International 
-   Organization for Standardization.</p>
-</li>
-<li>
-<p><strong>z390 Portable Mainframe Assembler and Emulator</strong>. z390 Assembler LLC.</p>
-</li>
-<li>zcobol/lib/ZC390CVT.CPY - Runtime vector table</li>
-</ol>
-<hr />
-<h2 id="changelog">Changelog</h2>
-<table>
-<thead>
-<tr>
-<th>Version</th>
-<th>Date</th>
-<th>Author</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.0</td>
-<td>December 2025</td>
-<td>Zane Hambly</td>
-<td>Initial implementation of basic STRING with DELIMITED BY SIZE</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Document version: 1.0 | Last updated: December 2025</em></p>
+<h2 id="reference">Reference</h2>
+<p>FIPS PUB 21-2 (1985), sections XI through XI-5 (Sort-Merge Module).
+Incorporates ANSI X3.23-1985 and ISO 1989-1985.</p>
 
 
 
@@ -2708,7 +2996,7 @@ TESTSTR1 - TEST ENDED OK
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "v1.8.4.1-113-gb5becae9"}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "v1.8.4.1-147-g196d0086"}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
