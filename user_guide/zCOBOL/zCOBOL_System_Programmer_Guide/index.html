@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -1704,35 +1704,7 @@
   <span class="md-ellipsis">
     
   
-    zVSAM V2 - Physical structure of the files
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../zVSAM/zVSAM_V2_Design_Interfaces/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    zVSAM V2 Design Interfaces
+    zVSAM V2 Design File Structure
   
 
     
@@ -1789,34 +1761,6 @@
     
   
     zVSAM V2 - Logical processes for ACB-based requests
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../zVSAM/zVSAM_V2_Design_Addenda/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    zVSAM V2 Design Addenda
   
 
     
@@ -2666,6 +2610,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../design/zVSAM/zVSAM_V2_Design_Catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zVSAM V2 Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../design/zVSAM/zVSAM_V2_Design_Interfaces/" class="md-nav__link">
         
   
@@ -2674,6 +2646,34 @@
     
   
     zVSAM V2 - API for Assembler and zCobol programs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/zVSAM/zVSAM_V2_Design_File_Structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zVSAM V2 - Physical structure of the files
   
 
     
@@ -2970,8 +2970,8 @@ statements are as follows:</p>
 </code></pre></div>
 <ol>
 <li>zc390 translator generates the following 2 zCOBOL verb macro call statements:
-<div class="highlight"><pre><span></span><code><span class="c">MOVE  </span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;TO&#39;</span><span class="p">,</span><span class="nv">FLT_SRT</span><span class="p">,</span><span class="s2">&quot;(&#39;,2,&#39;)&#39;`   </span>
-<span class="c">COMPUT</span><span class="nv">E</span><span class="w"> </span><span class="nv">FLT_SRT</span><span class="p">,</span><span class="s1">&#39;(&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;)&#39;</span><span class="p">,</span><span class="o">=</span><span class="p">,</span><span class="nv">FLT_SRT</span><span class="p">,</span><span class="s1">&#39;(&quot;,2,&#39;</span><span class="p">)</span><span class="s1">&#39;,+,2.2</span>
+<div class="highlight"><pre><span></span><code><span class="c">MOVE  </span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span><span class="s1">'TO'</span><span class="p">,</span><span class="nv">FLT_SRT</span><span class="p">,</span><span class="s2">"(',2,')'`   </span>
+<span class="c">COMPUT</span><span class="nv">E</span><span class="w"> </span><span class="nv">FLT_SRT</span><span class="p">,</span><span class="s1">'('</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s1">')'</span><span class="p">,</span><span class="o">=</span><span class="p">,</span><span class="nv">FLT_SRT</span><span class="p">,</span><span class="s1">'(",2,'</span><span class="p">)</span><span class="s1">',+,2.2</span>
 </code></pre></div></li>
 <li>The MOVE macro uses shared copybook routine GET_FIELD_PARM to parse the two
 fields for MOVE and store resulting field name and symbol table index.
@@ -3404,10 +3404,10 @@ or in OPT options file.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "v1.8.4.4-5-g86384b8d"}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "v1.8.4.4-28-g9699cd6e"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
